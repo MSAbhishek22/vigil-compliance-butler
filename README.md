@@ -2,15 +2,17 @@
 
 > *"Compliance isn't just about following rules. It's about survival."*
 
+![Vigil Poster](assets/vigil_poster.jpg)
+
 ## 📸 Visual Showcase
 
 | Dashboard & Vigilance Score | Active AI Analysis |
 |:---:|:---:|
-| ![Dashboard](assets/screenshots/dashboard_main.png) | ![AI Analysis](assets/screenshots/analyzing_document.png) |
+| ![Dashboard](assets/screenshots/dashboard_main.png) | ![Requirements](assets/screenshots/requirements_list.png) |
 
-| Guarded Requirements List | Document Ingestion |
-|:---:|:---:|
-| ![Requirements](assets/screenshots/requirements_list.png) | ![Add Source](assets/screenshots/add_source_input.png) |
+| Document Ingestion |
+|:---:|
+| ![Add Source](assets/screenshots/add_source_input.png) |
 
 ---
 
