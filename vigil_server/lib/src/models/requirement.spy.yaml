@@ -1,0 +1,20 @@
+### This is the Serverpod model for Requirement
+class: Requirement
+table: requirements
+fields:
+  sourceDocumentId: int
+  title: String
+  description: String?
+  deadline: DateTime?
+  isMandatory: bool
+  status: String
+  proofUrl: String?
+  dependsOnId: int?
+  createdAt: DateTime
+indexes:
+  requirement_source_idx:
+    fields: sourceDocumentId
+  requirement_deadline_idx:
+    fields: deadline
+  requirement_status_idx:
+    fields: status

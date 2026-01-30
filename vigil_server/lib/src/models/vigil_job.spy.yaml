@@ -1,0 +1,18 @@
+### This is the Serverpod model for VigilJob (scheduled reminders)
+class: VigilJob
+table: vigil_jobs
+fields:
+  requirementId: int
+  reminderType: String
+  scheduledAt: DateTime
+  executedAt: DateTime?
+  status: String
+  notificationSent: bool
+  errorMessage: String?
+indexes:
+  vigil_job_requirement_idx:
+    fields: requirementId
+  vigil_job_scheduled_idx:
+    fields: scheduledAt
+  vigil_job_status_idx:
+    fields: status

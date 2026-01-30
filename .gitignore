@@ -1,0 +1,40 @@
+# Miscellaneous
+*.class
+*.log
+*.lock
+*.webp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+.idea/
+
+# Flutter/Dart/Pub
+.dart_tool/
+.packages
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Serverpod
+serverpod_client/
+generated/
+config.yaml
+passwords.yaml
+development.yaml
+
+# Windows
+thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Vs Code
+.vscode/

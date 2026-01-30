@@ -1,0 +1,18 @@
+### This is the Serverpod model for SourceDocument
+class: SourceDocument
+table: source_documents
+fields:
+  userId: int
+  url: String?
+  filePath: String?
+  fileType: String
+  status: String
+  title: String?
+  rawContent: String?
+  createdAt: DateTime
+  updatedAt: DateTime
+indexes:
+  source_document_user_idx:
+    fields: userId
+  source_document_status_idx:
+    fields: status
