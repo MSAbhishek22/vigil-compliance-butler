@@ -40,7 +40,7 @@ By automating the "boring" part of compliance, Vigil allows officers to focus on
 
 ---
 
-## 🛠️ The Tech Stack (Serverpod Hackathon)
+## 🛠️ The Tech Stack 
 
 We built Vigil to demonstrate the power of **Dart full-stack**.
 
@@ -83,4 +83,4 @@ flutter run -d chrome
 *   **Multi-Agent System**: Different agents for Legal (Lawyer Bot) vs. Finance (Accountant Bot).
 
 ---
-*Built with ❤️ and ☕ by [Your Name/Team] for the Serverpod Hackathon 2025.*
+*Built with ❤️ and ☕ by M S Abhishek*
