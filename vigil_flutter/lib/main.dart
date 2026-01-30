@@ -28,7 +28,25 @@ class VigilApp extends StatelessWidget {
       title: 'Vigil - The Compliance Butler',
       debugShowCheckedModeBanner: false,
       theme: _buildVigilTheme(),
-      home: DashboardView(client: client),
+      initialRoute: '/',
+      onGenerateRoute: (settings) {
+        Widget page;
+        switch (settings.name) {
+          case '/':
+            page = DashboardView(client: client, initialTabIndex: 0);
+            break;
+          case '/requirements':
+            page = DashboardView(client: client, initialTabIndex: 1);
+            break;
+          default:
+            page = DashboardView(client: client, initialTabIndex: 0);
+        }
+        
+        return MaterialPageRoute(
+          builder: (context) => page,
+          settings: settings,
+        );
+      },
     );
   }
 

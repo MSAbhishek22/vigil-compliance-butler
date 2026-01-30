@@ -12,8 +12,13 @@ import '../widgets/butler_status_widget.dart';
 /// Features the "Vigilance Score" and quick access to all Butler features.
 class DashboardView extends StatefulWidget {
   final Client client;
+  final int initialTabIndex;
   
-  const DashboardView({super.key, required this.client});
+  const DashboardView({
+    super.key, 
+    required this.client,
+    this.initialTabIndex = 0,
+  });
 
   @override
   State<DashboardView> createState() => _DashboardViewState();
@@ -29,6 +34,7 @@ class _DashboardViewState extends State<DashboardView> {
   @override
   void initState() {
     super.initState();
+    _currentIndex = widget.initialTabIndex;
     _loadDashboardData();
   }
 
@@ -307,7 +313,11 @@ class _DashboardViewState extends State<DashboardView> {
                 ? Theme.of(context).colorScheme.secondary 
                 : Colors.white54,
             ),
-            onPressed: () => setState(() => _currentIndex = 0),
+            onPressed: () {
+              if (_currentIndex != 0) {
+                Navigator.of(context).pushReplacementNamed('/');
+              }
+            },
           ),
           const SizedBox(width: 48), // Space for FAB
           IconButton(
@@ -317,7 +327,11 @@ class _DashboardViewState extends State<DashboardView> {
                 ? Theme.of(context).colorScheme.secondary 
                 : Colors.white54,
             ),
-            onPressed: () => setState(() => _currentIndex = 1),
+            onPressed: () {
+              if (_currentIndex != 1) {
+                Navigator.of(context).pushReplacementNamed('/requirements');
+              }
+            },
           ),
         ],
       ),

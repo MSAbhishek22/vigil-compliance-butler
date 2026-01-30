@@ -2,8 +2,17 @@
 
 > *"Compliance isn't just about following rules. It's about survival."*
 
-![Vigil Banner](https://raw.githubusercontent.com/MSAbhishek22/vigil-compliance-butler/main/assets/banner.png)
-*(Note: Upload a screenshot to your repo and replace this link for the hackathon!)*
+## 📸 Visual Showcase
+
+| Dashboard & Vigilance Score | Active AI Analysis |
+|:---:|:---:|
+| ![Dashboard](assets/screenshots/dashboard_main.png) | ![AI Analysis](assets/screenshots/analyzing_document.png) |
+
+| Guarded Requirements List | Document Ingestion |
+|:---:|:---:|
+| ![Requirements](assets/screenshots/requirements_list.png) | ![Add Source](assets/screenshots/add_source_input.png) |
+
+---
 
 ## 🚨 The Problem: Compliance Fatigue
 In high-stakes industries like **Finance, Healthcare, and Law**, missing a single deadline isn't just an "oops."
